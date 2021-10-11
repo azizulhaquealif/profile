@@ -1,3 +1,8 @@
+* {
+    font-family: 'Roboto';
+    color: whitesmoke;
+ }
+
 .title{
     font-family: var(--roboto), monospace;
     font-style: normal;
@@ -70,4 +75,29 @@
 
 .font-roboto{
     font-family: var(--roboto);
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn .active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1{
+    font: normal bold 39px/40px var(--roboto);
+}
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
 }

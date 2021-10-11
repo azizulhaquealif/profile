@@ -6,14 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMAR DOFTOR</title>
 
+    <!-- title logo -->
+    <link rel="shortcut icon" href="./img/logo.png" />
+
     <!-- Bootstrap css file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <!-- font awesome icons -->
     <link href="./icons/css/all.css" rel="stylesheet">
 
+    <!-- magnific popup css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css file -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- owlcarousel css file -->
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
+
+    <!-- custom font css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
 </head>
 <body>
     
@@ -31,28 +50,31 @@
               <div class="me-auto"></div>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pages</a>
+                  <a class="nav-link" href="#blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#project">Project</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Project</a>
+                  <a class="nav-link" href="#feedback">Feedback</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#subscribe">Subscribe</a>
                 </li>
               </ul>
             </div>
@@ -67,12 +89,12 @@
     <main class="site-mein">
 
       <!-- ================= Start Banner Area ================== -->
-      <section class="site-banner">
+      <section class="site-banner" id = "home">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
               <h3 class="title">Hello</h3>
-              <h1 class="title text-uppercase">I am Alif</h1>
+              <h1 class="title text-uppercase">This is Alif</h1>
               <h4 class="title-text text-uppercase">Competitive Programmer</h4>
               <h4 class="title-text text-uppercase">Web Developer</h4>
               <h4 class="title-text text-uppercase">Android Developer</h4>
@@ -80,8 +102,8 @@
 
               <div class="site-buttons">
                 <div class="d-flex flex-row flex-wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
-                  <button type="button" class="btn button secondary-button text-uppercase">get cv</button>
+                  <button type="button" class="btn button primary-button mr-4 text-uppercase" onclick="location.href='mailto:alifcse49@gmail.com';">hire me</button>
+                  <button type="button" class="btn button secondary-button text-uppercase" onclick="location.href='./cv/Md. Alif Babu.pdf';">get cv</button>
                 </div>
               </div>
             </div>
@@ -96,7 +118,7 @@
       
       <!-- ================= About Area ================== -->
 
-      <section class="about-area">
+      <section class="about-area" id="about">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -118,10 +140,12 @@
                   I have some degree of eduacation and learning. But it's does not matter to me. Though I earned those degree with my hard work and small amount of passion. Nowadays I realized that those not for our real world.
                 </p>
                 <p class="para">
-                  In the end of the day, I tire, confuse, depression etc. Whatever happen, I love myself and it's me.
+                  In the end of the day, I tired, confused, depressed etc. Whatever happen, I love myself and it's me.
                 </p>
               </div>
-              <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+              <a href="./cv/Md. Alif Babu.pdf" download="Md Alif Babu - 01767310339">
+                <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+              </a>
             </div>
           </div>
         </div>
@@ -131,7 +155,7 @@
     
     <!-- ================= Brand Area ================== -->
 
-    <section class="brand-area">
+    <section class="brand-area" id="experience">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-6 col-lg-12 col-md-12">
@@ -148,17 +172,17 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo3.png" alt="Brand-3">
+                  <img src="./img/brand/logo3.gif" alt="Brand-3">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo4.png" alt="Brand-4">
+                  <img src="./img/brand/logo4.gif" alt="Brand-4">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo5.png" alt="Brand-5">
+                  <img src="./img/brand/logo5.gif" alt="Brand-5">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
@@ -168,17 +192,32 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo3.png" alt="Brand-7">
+                  <img src="./img/brand/logo7.png" alt="Brand-7">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo2.png" alt="Brand-8">
+                  <img src="./img/brand/logo8.png" alt="Brand-8">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-brand">
-                  <img src="./img/brand/logo1.png" alt="Brand-9">
+                  <img src="./img/brand/logo9.gif" alt="Brand-9">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-brand">
+                  <img src="./img/brand/logo10.png" alt="Brand-10">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-brand">
+                  <img src="./img/brand/logo11.png" alt="Brand-11">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-brand">
+                  <img src="./img/brand/logo12.png" alt="Brand-12">
                 </div>
               </div>
             </div>
@@ -196,7 +235,9 @@
               <div class="d-flex flex-row flex-wrap call-area">
                 <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
                 <div class="call-now">
-                  <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+                  <a href="tel:+8801767310339" class="text-uppercase h4 font-roboto">
+                    <button type="button" class="btn button primary-button text-uppercase">Call Now</button>
+                  </a>
                   <span class="font-roboto py-2">(+880)-1767-310339</span>
                 </div>
               </div>
@@ -211,13 +252,16 @@
     
     <!-- ================= Start Service Area ================== -->
     
-    <section class="service-area">
+    <section class="services-area" id = "services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 text-center services-title">
             <h1 class="text-uppercase title-text">Service Offers</h1>
             <p class="para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquid!
+              In present, I open for everything. 
+              I provide various kind of work. As like team work, 
+              web development, competitive programming, video editing, 
+              android developing and so on....
             </p>
           </div>
         </div>
@@ -226,7 +270,52 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="services">
                 <div class="services-img text-center py-4">
-                  
+                  <img src="./img/services/s1.png", alt="Services-1">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-roboto">Programming</h5>
+                  <p class="card-text text-secondary">
+                    Programming is my emotion. I wanna learn that more and more. Sometimes wanna teach a little bit. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="services">
+                <div class="services-img text-center py-4">
+                  <img src="./img/services/s2.png", alt="Services-2">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-roboto">Web Developing</h5>
+                  <p class="card-text text-secondary">
+                    Developing web is a huge fun to me as a part of programming. I wanna learn and teach that too. In that case, I would feel more pleasance, If I get a team.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="services">
+                <div class="services-img text-center py-4">
+                  <img src="./img/services/s3.png", alt="Services-3">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-roboto">Android Developing</h5>
+                  <p class="card-text text-secondary">
+                    I always prefer API based android development environment. I have little knowledge to teach about android.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="services">
+                <div class="services-img text-center py-4">
+                  <img src="./img/services/s4.png", alt="Services-4">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-roboto">Video Editing</h5>
+                  <p class="card-text text-secondary">
+                    Editing video is more than editing. It's very big spiritual thought like a art of maze. I wanna learn more and provide services about video editing.
+                  </p>
                 </div>
               </div>
             </div>
@@ -237,12 +326,442 @@
 
     <!-- ================== End Service Area ================== -->
 
+    <!-- ================= Start Blog Area ================== -->
+
+    <section class="blog-area" id="blog">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="blog-title">
+                <h1 class="text-uppercase title-h1">Blog</h1>
+                <p class="para">
+                  My blog will be adding as soon as poss
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container carousel py-lg-5">
+        <div class="owl-carousel owl-theme">
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c1.jpg" alt="img1" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Herok, Remon</h4>
+              <p class="para">
+                It's the time when I buy Redmi note 7.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c2.jpg" alt="img2" class="img-fluid">
+            </div> 
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Nahid, Mamun</h4>
+              <p class="para">
+                Networking Lab.....
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c3.jpg" alt="img3" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Maruf, Kabbo</h4>
+              <p class="para">
+                The ground is 8th floor of Daffodil Tower.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c4.jpg" alt="img4" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Don of Homna, Mamun</h4>
+              <p class="para">
+                In exam hall, Showing creativity as a artist....
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c5.jpg" alt="img5" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Rakib, Sarwar</h4>
+              <p class="para">
+                Chilling with girls in dhanmondi lake.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c6.jpg" alt="img6" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Rakib</h4>
+              <p class="para">
+                Thinking hot thought wrapping by blanket. It was a moment before exam.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c7.jpg" alt="img7" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Palash, Jamil</h4>
+              <p class="para">
+                Doing team work.......
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c8.JPG" alt="img7" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Mamun, Rony</h4>
+              <p class="para">
+                Chilling on sea beach...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= End Blog Area ================== -->
+
+    <!-- ================== Start Project Area ================== -->
+  
+    <section class="project-area" id="project">
+      <div class="container">
+        <div class="project-title pb-5">
+          <h1 class="text-uppercase title-h1">Recently Done Project</h1>
+          <h1 class="text-uppercase title-h1">Quality Work</h1>
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="active" id="btn1" data-filter="*">All</button>
+          <button type="button" data-filter=".popular">Popular</button>
+          <button type="button" data-filter=".latest">Latest</button>
+          <button type="button" data-filter=".following">Following</button>
+          <button type="button" data-filter=".upcoming">Upcoming</button>
+        </div>
+
+        <div class="row grid">
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item latest popular following">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p1.gif">
+                  <img src="./img/project/p1.gif" alt="project-1">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Amar Doftor</h4>
+                <span class="text-secondary">Letest, Portfolio</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item popular upcoming">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p2.png">
+                  <img src="./img/project/p2.png" alt="project-2">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Booko Sapience</h4>
+                <span class="text-secondary">Popular, Borrow and Exchange</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item following upcoming popular">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p3.png">
+                  <img src="./img/project/p3.png" alt="project-3">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Campus Vive</h4>
+                <span class="text-secondary">Following, Campus Tracking</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p4.gif">
+                  <img src="./img/project/p4.gif" alt="project-4">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Daily Life</h4>
+                <span class="text-secondary">Upcoming, Keep Track</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item popular upcoming">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p5.png">
+                  <img src="./img/project/p5.png" alt="project-5">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Family Background & Foreground</h4>
+                <span class="text-secondary">Popular, Birth Tree</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item popular upcoming">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p6.gif">
+                  <img src="./img/project/p6.gif" alt="project-6">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Shruti Madhur</h4>
+                <span class="text-secondary">Popular, Your favorite music here!</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item popular upcoming">
+            <div class="our-project">
+              <div class="img">
+                <a class="test-popup-link" href="./img/project/p7.png">
+                  <img src="./img/project/p7.png" alt="project-7">
+                </a>
+              </div>
+              <div class="py-4 title">
+                <h4 class="text-upercase">Village Market</h4>
+                <span class="text-secondary">Popular, Hat-Bazar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== End Project Area ================== -->
+
+    <!-- ================== Start About Me Area ================== -->
+
+    <section class="about-area" id="feedback">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="about-title">
+               <h1 class="text-uppercase title-h1">Client Say About Me</h1>
+               <p class="para">
+                 I have no client for now. As a demo, I am pressenting my friend circle.
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container carousel py-lg-5">
+        <div class="owl-carousel owl-theme">
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c1.jpg" alt="img1" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Herok, Remon</h4>
+              <p class="para">
+                It's the time when I buy Redmi note 7.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c2.jpg" alt="img2" class="img-fluid">
+            </div> 
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Nahid, Mamun</h4>
+              <p class="para">
+                Networking Lab.....
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c3.jpg" alt="img3" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Maruf, Kabbo</h4>
+              <p class="para">
+                The ground is 8th floor of Daffodil Tower.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c4.jpg" alt="img4" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Don of Homna, Mamun</h4>
+              <p class="para">
+                In exam hall, Showing creativity as a artist....
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c5.jpg" alt="img5" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Rakib, Sarwar</h4>
+              <p class="para">
+                Chilling with girls in dhanmondi lake.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c6.jpg" alt="img6" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Rakib</h4>
+              <p class="para">
+                Thinking hot thought wrapping by blanket. It was a moment before exam.
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c7.jpg" alt="img7" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Palash, Jamil</h4>
+              <p class="para">
+                Doing team work.......
+              </p>
+            </div>
+          </div>
+          <div class="client row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img src="./img/client/c8.JPG" alt="img7" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Mamun, Rony</h4>
+              <p class="para">
+                Chilling on sea beach...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== End About Me Area ================== -->
+    
+    <!-- ================== Start Contact Area ================== -->
+
+    <section class="contact-area" id="contact">
+      <div class="container contact">
+        <div class="contact-title text-center">
+          <h1 class="text-uppercase">Contact</h1>
+          <p class="para">
+            You can face me easily...
+          </p>
+        </div>
+        <div class="contact-info">
+          <div class="col">
+            <span class="row-12"><b>Phone:</b> +8801767310339, +8801521380864</span><br>
+            <span class="row-12"><b>Email:</b> alifcse49@gmail.com, alif15-10730@diu.edu.bd</span><br>
+            <span class="row-12"><b>Address-1:</b> 82, 2nd Lane, Kakabagan-1215, Dhaka</span><br>
+            <span class="row-12"><b>Address-2:</b> Chakalma, Kundarhar-5860, Nandgram, Bogura</span><br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== End Contact Area ================== -->
+
+    <!-- ================== Start Subscribe Me Area ================== -->
+    <section class="subscribe-us-area" id="subscribe">
+      <div class="container subscribe">
+        <div class="row">
+          <div class="col-lg-12 text-center subscribe-title">
+            <h4 class="text-uppercase">Get Update From Anywhere</h4>
+            <p class="para">
+              There is no backend present for this web. So I could not ensure the subscription system workable.
+            </p>
+          </div>
+        </div>
+        <div class="d-sm-flex justify-content-center">
+          <form class="w-75">
+            <div class="row d-flex flex-row flex-wrap">
+              <div class="col input-textbox">
+                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+              </div>
+              <div class="col"> 
+                <div class="btn-submit">
+                  <button onclick=success() type="submit" class="btn btn-success float-end">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ================== End Subscribe Me Area ================== -->
+
     </main>
     <!-- ================= End Main Area ================== -->
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="">
+          <div class="site-logo text-center py-4">
+            <a href="#"><img src="./img/nav_logo.gif" alt="logo"></a>
+          </div>
+          <div class="social text-center">
+            <h5 class="text-uppercase">Follow Me</h5>
+            <a href="https://www.facebook.com/azizul.alif.37"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/azizulhaquealif"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/MdAlif95193417"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/md-alif-babu/"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="copyright text-center">
+            <p class="para">
+              Copyright 
+              <i class="fa fa-copyright" aria-hidden="true"></i>
+              2021 All rights reserved|This template is made by
+              <a href="#"><span style="color:var(--primary-color)">Alif</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     
+    <!-- JQuery js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <!-- Bootstrap js file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- Isotope js file -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Magnific Popup js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owlcarousel js file -->
+    <script src="./owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

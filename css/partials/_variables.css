@@ -5,20 +5,19 @@ html, body{
     height: 100%;
 }
 
-
 /* css variables */
 
 :root{
     --primary-color: #4458dc;
     --primary-color2: #854fee;
     --title-color: #000000;
-    --text-color: #777777;
+    --text-color: #241f1f;
     --border-color: #201f1f17;
     --gradient-color: linear-gradient(90deg, #dc448b 0%, #4feee6 100%);
     --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     
     /* font family variables */
-    --roboto: 'roboto', cursive;
+    --roboto: "Roboto", sans-serif;
 }
 
